@@ -13,14 +13,16 @@
         </header>
         <div class="screen">
             <div class="menu">
-                <button class="btn btnBalance">DISPLAY BALANCE</button>
-                <button class="btn btnDeposit">MAKE A DEPOSIT</button>
-                <button class="btn btnWithdrawal">MAKE A WITHDRAWAL</button>
-                <button class="btn btnAccountName">DISPLAY ACCOUNT HOLDER NAME</button>
-                <button class="btn btnExit">EXIT</button>
+                <button class="btn btn--menu btnBalance">DISPLAY ACCOUNT HOLDER NAME</button>
+                <button class="btn btn--menu btnDeposit">DISPLAY BALANCE</button>
+                <button class="btn btn--menu btnWithdrawal">MAKE A DEPOSIT</button>
+                <button class="btn btn--menu btnAccountName">MAKE A WITHDRAWAL</button>
             </div>
+            <h2 class="instructions">PRESS BUTTON TO CHOOSE ACTION</h2>
             <div class="input-container">
-                <input type="text" />
+                <button class="btn btn--exit btnExit">EXIT</button>
+                <input class="input inputField" type="text" />
+                <button class="btn btn--submit btn__submit btnSubmit">SUBMIT</button>
             </div>
         </div>
         <script src="script.js"></script>
