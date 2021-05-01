@@ -45,9 +45,6 @@ h2 {
     padding: 12px;
 }
 
-.btn--menu {
-}
-
 .btn--exit {
     background-color: rgb(235, 238, 64);
     flex: 1;
@@ -56,6 +53,22 @@ h2 {
 .btn--submit {
     background-color: rgb(64, 230, 64);
     flex: 1;
+}
+
+.btn--menu:hover,
+focus,
+active {
+    background-color: #d4d4d4;
+}
+
+.btn--exit:hover,
+focus {
+    background-color: rgb(198, 201, 24);
+}
+
+.btn--submit:hover,
+focus {
+    background-color: rgb(39, 196, 39);
 }
 
 .input-container {
