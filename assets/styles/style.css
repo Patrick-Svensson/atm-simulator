@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to top left, #264198, #4c6cd8);
+    font-family: sans-serif;
+    color: #fcfcfc;
+}
+
+h1 {
+    font-size: 60px;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+
+.btn {
+    font-weight: 700;
+    letter-spacing: 2px;
+    box-shadow: 0 8px 6px -6px black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.btn--welcome {
+    font-size: 30px;
+}
+
+.btn--welcome:hover {
+    background-color: #d4d4d4;
+}
