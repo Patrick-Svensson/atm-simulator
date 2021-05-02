@@ -54,12 +54,12 @@ h2 {
     padding: 12px;
 }
 
-.btnExit {
+.btn__exit {
     background-color: rgb(235, 238, 64);
     flex: 1;
 }
 
-.btnSubmit {
+.btn__submit {
     background-color: rgb(64, 230, 64);
     flex: 1;
 }
@@ -69,12 +69,12 @@ active {
     background-color: #d4d4d4;
 }
 
-.btnExit:hover,
+.btn__exit:hover,
 focus {
     background-color: rgb(198, 201, 24);
 }
 
-.btnSubmit:hover,
+.btn__submit:hover,
 focus {
     background-color: rgb(39, 196, 39);
 }
@@ -86,7 +86,7 @@ focus {
     margin-bottom: 20px;
 }
 
-.input {
+.input-field {
     width: 100%;
     flex: 3.8;
     border-radius: 5px;
