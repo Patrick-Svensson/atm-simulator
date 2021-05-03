@@ -6,7 +6,7 @@ body {
     align-items: center;
     background: linear-gradient(to top left, #264198, #4c6cd8);
     font-family: sans-serif;
-    color: #fcfcfc;
+    color: #fff;
     text-align: center;
 }
 
@@ -21,6 +21,7 @@ h1 span {
 }
 
 h2 {
+    font-size: 20px;
     letter-spacing: 2px;
 }
 
@@ -31,7 +32,7 @@ h2 {
     align-items: center;
     width: 60%;
     height: 70%;
-    border: 2px solid #fcfcfc;
+    border: 2px solid #fff;
     border-radius: 10px;
 }
 
@@ -60,13 +61,15 @@ h2 {
     background-color: rgb(235, 238, 64);
 }
 
-.btn__submit {
+.btn__enter {
     background-color: rgb(64, 230, 64);
 }
 
-.btn--menu:hover,
-active {
-    background-color: #d4d4d4;
+.btn--menu:focus {
+    background-color: rgb(202, 202, 202);
+}
+.btn--menu:hover {
+    background-color: rgb(202, 202, 202);
 }
 
 .btn__exit:hover,
@@ -78,7 +81,7 @@ focus {
     background-color: rgb(198, 201, 24);
 }
 
-.btn__submit:hover,
+.btn__enter:hover,
 focus {
     background-color: rgb(39, 196, 39);
 }
@@ -97,6 +100,7 @@ focus {
     font-size: 20px;
     padding: 10px;
     margin-left: 5px;
+    background-color: #fff;
 }
 
 .currency-symbol {
