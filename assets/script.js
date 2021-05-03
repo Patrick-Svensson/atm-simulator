@@ -12,39 +12,49 @@ const account = {
     getBalance: btnBalance.addEventListener("click", () => {
         document.querySelector(".message").innerHTML = `&#8364;${account.balance}`;
     }),
-    deposit: btnDeposit.addEventListener("click", function () {
+
+    deposit: btnDeposit.addEventListener("click", () => {
         document.querySelector(".message").innerHTML = "Type the amount";
+        document.querySelector(".input-field").value = 0;
         document.querySelector(".input-field").focus();
         document.querySelector(".input-field").select();
     }),
+
     withdrawal: btnWithdrawal.addEventListener("click", () => {
         document.querySelector(".message").innerHTML = `(€3 withdrawal fee) Type the amount`;
+        document.querySelector(".input-field").value = 0;
         document.querySelector(".input-field").focus();
         document.querySelector(".input-field").select();
     }),
+
     getAccountName: btnAccountName.addEventListener("click", () => {
         document.querySelector(".message").innerHTML = `${account.accountName}`;
     }),
-    accountError: function () {},
+
     exitAccount: btnExit.addEventListener("click", () => {
         return window.location.assign("../../index.html");
     }),
+
     clearMessage: btnClear.addEventListener("click", () => {
         document.querySelector(".message").innerHTML = `PRESS BUTTON TO CHOOSE ACTION`;
         document.querySelector(".input-field").value = 0;
     }),
+
+    enterInput: enter.addEventListener("click", () => {
+        let inputValue = parseInt(document.querySelector(".input-field").value);
+
+        if (document.querySelector(".message").innerHTML === `(€3 withdrawal fee) Type the amount` && inputValue > 0) {
+            account.balance -= inputValue + 3;
+            document.querySelector(".input-field").value = 0;
+        } else if (document.querySelector(".message").innerHTML === "Type the amount") {
+            account.balance += inputValue;
+            document.querySelector(".input-field").value = 0;
+        } else {
+            return;
+        }
+    }),
+
+    accountError: function () {},
+    // if not a number
+    //
 };
-
-enter.addEventListener("click", () => {
-    let inputValue = parseInt(document.querySelector(".input-field").value);
-
-    if (document.querySelector(".message").innerHTML == `(€3 withdrawal fee) Type the amount`) {
-        account.balance -= inputValue + 3;
-        document.querySelector(".input-field").value = 0;
-    } else if (document.querySelector(".message").innerHTML === "Type the amount") {
-        account.balance += inputValue;
-        document.querySelector(".input-field").value = 0;
-    } else {
-        return;
-    }
-});
