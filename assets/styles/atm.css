@@ -96,5 +96,9 @@ focus {
     border-radius: 5px;
     font-size: 20px;
     padding: 10px;
-    margin: 0 10px;
+    margin-left: 5px;
+}
+
+.currency-symbol {
+    font-size: 25px;
 }
