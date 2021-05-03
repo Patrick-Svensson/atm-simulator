@@ -53,16 +53,14 @@ const account = {
             account.balance -= inputValue + 3;
             document.querySelector(".message").innerHTML = "The amount has been deducted from Your account.";
             document.querySelector(".input-field").value = 0;
-        } else if (inputValue < 10) {
-            document.querySelector(".message").innerHTML = "Please, enter an amount rounded up to nearest €10.";
         } else if (document.querySelector(".message").innerHTML === "Please, enter an amount" && inputValue > 10) {
             account.balance += inputValue;
             document.querySelector(".message").innerHTML = "The amount has been deposited to Your account.";
             document.querySelector(".input-field").value = 0;
         } else {
-            return;
+            document.querySelector(".message").innerHTML = "Please, enter an amount rounded up to nearest €10.";
         }
     }),
 };
 
-// I chose if/else because, frankly, it gave me an easies ride.
+// I chose if/else because the conditions are few and, frankly, it gave me an easies ride.
