@@ -40,7 +40,8 @@ const account = {
         document.querySelector(".input-field").value = 0;
     }),
 
-    //
+    // Using parseInt to convert the text input from a string to an integer (would have used parseFloat if I needed decimals).
+
     enterInput: enter.addEventListener("click", () => {
         let inputValue = parseInt(document.querySelector(".input-field").value);
 
@@ -67,3 +68,5 @@ const account = {
         }
     }),
 };
+
+// I chose if/else because, frankly, it gave me an easies ride.
