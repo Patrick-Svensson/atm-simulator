@@ -40,6 +40,7 @@ const account = {
         document.querySelector(".input-field").value = 0;
     }),
 
+    //
     enterInput: enter.addEventListener("click", () => {
         let inputValue = parseInt(document.querySelector(".input-field").value);
 
@@ -52,7 +53,7 @@ const account = {
             document.querySelector(".message").innerHTML = "The amount has been deducted from Your account.";
             document.querySelector(".input-field").value = 0;
         } else if (inputValue < 10) {
-            document.querySelector(".message").innerHTML = "Please, enter an amount rounded up to €10.";
+            document.querySelector(".message").innerHTML = "Please, enter an amount rounded up to nearest €10.";
         } else if (inputValue > account.balance) {
             document.querySelector(
                 ".message"
