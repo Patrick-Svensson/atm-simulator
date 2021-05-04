@@ -55,7 +55,8 @@ const account = {
             document.querySelector(".input-field").value = 0;
         } else if (
             document.querySelector(".message").innerHTML === "(€3 withdrawal fee) Please, enter an amount" &&
-            inputValue < account.balance
+            inputValue > account.balance &&
+            inputValue > 9
         ) {
             document.querySelector(
                 ".message"
