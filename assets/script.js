@@ -53,6 +53,13 @@ const account = {
             account.balance -= inputValue + 3;
             document.querySelector(".message").innerHTML = "The amount has been deducted from Your account.";
             document.querySelector(".input-field").value = 0;
+        } else if (
+            document.querySelector(".message").innerHTML === "(€3 withdrawal fee) Please, enter an amount" &&
+            inputValue > account.balance
+        ) {
+            document.querySelector(
+                ".message"
+            ).innerHTML = `Your balance is €${account.balance} Please enter new amount.`;
         } else if (document.querySelector(".message").innerHTML === "Please, enter an amount" && inputValue > 9) {
             account.balance += inputValue;
             document.querySelector(".message").innerHTML = "The amount has been deposited to Your account.";
