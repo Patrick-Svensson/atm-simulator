@@ -76,4 +76,4 @@ const account = {
     }),
 };
 
-// I chose if/else because the conditions are few and, frankly, it gave me an easies ride.
+// I chose if/else because the conditions are few and, frankly, it gave me an easier ride.
