@@ -1,10 +1,10 @@
-btnBalance = document.querySelector(".btn__balance");
-btnDeposit = document.querySelector(".btn__deposit");
-btnWithdrawal = document.querySelector(".btn__withdrawal");
-btnAccountName = document.querySelector(".btn__account-name");
-btnExit = document.querySelector(".btn__exit");
-btnClear = document.querySelector(".btn__clear");
-enter = document.querySelector(".btn__enter");
+const btnBalance = document.querySelector(".btn__balance");
+const btnDeposit = document.querySelector(".btn__deposit");
+const btnWithdrawal = document.querySelector(".btn__withdrawal");
+const btnAccountName = document.querySelector(".btn__account-name");
+const btnExit = document.querySelector(".btn__exit");
+const btnClear = document.querySelector(".btn__clear");
+const enter = document.querySelector(".btn__enter");
 
 const account = {
     accountName: "Jane Doe",
@@ -59,9 +59,7 @@ const account = {
             inputValue > account.balance &&
             inputValue > 9
         ) {
-            document.querySelector(
-                ".message"
-            ).innerHTML = `Your balance is €${account.balance} Please enter new amount.`;
+            document.querySelector(".message").innerHTML = `Your balance is €${account.balance} Please enter new amount.`;
         } else if (
             document.querySelector(".message").innerHTML === "Please, enter an amount" &&
             inputValue > 1 &&
